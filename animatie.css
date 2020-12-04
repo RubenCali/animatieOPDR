@@ -1,5 +1,5 @@
 body{
-    background-color: royalblue;
+    background-color: whitesmoke;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -10,10 +10,13 @@ body{
     padding: .5em .9em;
     box-sizing: border-box;
     width: 2.7em;
+    background-color: rgb(226, 0, 0);
+    color: white;
+
 }
 .nav__knop:hover{
-    color: rosybrown;
-    background-color: seashell;
+    color: rgb(255, 255, 255);
+    background-color: rgb(226, 0, 0);
 }
 nav{
     position: fixed;
@@ -27,15 +30,18 @@ display: flex;
 flex-direction: column;
 }
 .nav__link:hover{
-    background-color: slateblue;
+    background-color: rgb(255, 29, 29);
     color: snow;
+    transition: 1s;
 }
 .nav__item{
 margin-top: .1em;
 }
 .nav__link{
-    color: royalblue;
-    background-color: seagreen;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background-color: rgb(226, 0, 0);
     text-decoration: none;
     display: block;
     padding: .2em .8em;
@@ -44,6 +50,12 @@ margin-top: .1em;
 }
 .nav__link--schuif-in{
     transform: translateX(0);
+}
+button{
+    background: rgb(255, 54, 54);
+    color: white;
+    border: none;
+    border: 2px solid rgb(255, 54, 54);
 }
 
 .nav__link--schuif-in .nav__tekst {
@@ -113,7 +125,6 @@ main{
     overflow-x: hidden;
 }
 .vlakje{
-    background-color: seagreen;
     width: 15vw;
     height: 15vw;
     transform: translateX(2em);
