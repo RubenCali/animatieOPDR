@@ -6,6 +6,15 @@ body{
     font-family: Roboto;
     color: seagreen;
 }
+.nav__knop{
+    padding: .5em .9em;
+    box-sizing: border-box;
+    width: 2.7em;
+}
+.nav__knop:hover{
+    color: rosybrown;
+    background-color: seashell;
+}
 nav{
     position: fixed;
 }
@@ -17,8 +26,12 @@ margin: 0;
 display: flex;
 flex-direction: column;
 }
+.nav__link:hover{
+    background-color: slateblue;
+    color: snow;
+}
 .nav__item{
-margin-bottom: .1em;
+margin-top: .1em;
 }
 .nav__link{
     color: royalblue;
@@ -26,6 +39,11 @@ margin-bottom: .1em;
     text-decoration: none;
     display: block;
     padding: .2em .8em;
+    transform: translateX(-8.1em);
+    transition: transform .8s ease-in-out;
+}
+.nav__link--schuif-in{
+    transform: translateX(0);
 }
 main{
     min-height: 100vh;
@@ -47,4 +65,7 @@ main{
 .animeer-knop{
     height: 1.5em;
 
+}
+.fas.verberg{
+    display: none;
 }
