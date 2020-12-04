@@ -1,8 +1,15 @@
-document.querySelector('.animeer-knop').addEventListener('click', (e) => {
-    document.querySelector('.vlakje').classList.toggle('vlakje__naar-rechts')
-})
+const animeerKnop = document.querySelector('.animeer-knop');
+ const balKnop =  document.querySelector('.vlakje');
+ const menu =  document.querySelector('.fa-bars');
+ const closed =  document.querySelector('.fa-times');
+
+animeerKnop.addEventListener('click', animeerBall)
+function animeerBall(){
+    balKnop.classList.toggle('vlakje__naar-rechts');
+}
+
 setTimeout( () => {
-    document.querySelector('.vlakje').classList.toggle('vlakje__naar-rechts');
+    balKnop.classList.toggle('vlakje__naar-rechts');
 }, 2000) 
 
 const menuKnop = document.querySelector('.nav__knop');
@@ -15,7 +22,7 @@ menuKnop.addEventListener('click', () => {
             }, 100 * index);
         })
     });
-    document.querySelector('.fa-bars').classList.toggle('verberg');
-    document.querySelector('.fa-times').classList.toggle('verberg');
+    menu.classList.toggle('verberg');
+    closed.classList.toggle('verberg');
 
 });
