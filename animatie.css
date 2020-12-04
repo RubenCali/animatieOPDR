@@ -45,6 +45,24 @@ margin-top: .1em;
 .nav__link--schuif-in{
     transform: translateX(0);
 }
+@media screen and (min-width: 600px){
+    .nav{
+        flex-direction: row;
+        width: 100vw;
+
+    }
+    .nav__item{
+        margin-top: 0;
+        margin-left: .1em;
+        flex: 1 0 auto;
+    }
+    .nav__link{
+        transform: translateY(-2em);
+    }
+    .nav__link--schuif-in{
+        transform: translateY(0);
+    }
+}
 main{
     min-height: 100vh;
     display: flex;
